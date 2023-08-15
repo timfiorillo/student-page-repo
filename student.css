@@ -1,0 +1,782 @@
+/* FONT FAMINILIES */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@700&family=Titan+One&display=swap');
+/* Call with font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&family=Poppins:wght@700&family=Titan+One&display=swap');
+/* Call with font-family: 'Pacifico', cursive; */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main Wrapper */
+.wrapall {
+    line-height: 1.5;
+    font-family: source_sans_proregular, helvetica, arial, sans-serif;
+    font-size: 16px;
+}
+
+.pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+.wrapall section {
+    padding: 55px;
+}
+
+.sectitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 1.8px;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.vertspacer {
+    margin: 71px 0px;
+}
+
+.topspacer {
+    margin-top: 71px;
+}
+
+.topspacer2 {
+    margin-top: 16px;
+}
+
+.topspacer3 {
+    margin-top: 32px;
+}
+
+.topspacer1 {
+    margin-top: 8px;
+}
+
+.bottomspacer {
+    margin-bottom: 8px;
+}
+
+.bottomspacer2 {
+    margin-bottom: 16px;
+}
+
+.bodytxt {
+    color: #6D6D6D;
+    font-size: 1em;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.bodytxt p {
+    margin-bottom: 20px;
+}
+
+.accent {
+    color: #9BA9AE;
+}
+
+.blue {
+    color: #0083FF;
+}
+
+.brown {
+    background: #AD9983;
+}
+
+.clearlink {
+    text-decoration: none;
+}
+
+.boldlink {
+    font-weight: 700;
+}
+
+.bluebtn {
+    border-radius: 25px;
+    background: #0083FF;
+    color: #FFFFFF;
+    padding: 6px 76px;
+    border: 0px;
+    font-family: source_sans_proregular, helvetica, arial, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.smallheading {
+    font-family: Source Sans Pro;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 133.9%;
+}
+
+.subnote {
+    font-style: italic;
+    font-size: .875em;
+    line-height: 133.9%;
+}
+
+/* Start Hero Section */
+
+.hero {
+    background: url(images/white-blob.png), url(images/mask-group-min.png);
+    background-position: left bottom 0%, left 22px top 15%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 150%, cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroinfo {
+    background: #ffffff;
+    width: 455px;
+}
+
+.heroinfo p {
+    width: 83%;
+}
+
+.heroinfo>.accent {
+    font-size: 1.2em;
+    letter-spacing: .05em;
+    font-weight: 400;
+}
+
+.maintitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #000000;
+    letter-spacing: .02em;
+    line-height: 133.9%;
+    width: 100% !important;
+}
+
+.herolinks {
+    margin-bottom: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.herolinks a {
+    color: unset;
+    text-decoration: none;
+    border-bottom: 1.5px solid #0083FF;
+    padding-bottom: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-items: center;
+    width: fit-content;
+}
+
+.herolinks a svg {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.herolinks a span {
+    font-weight: 700;
+    padding-right: 3px;
+}
+
+.heropics {
+    width: 40%;
+}
+
+/* End Hero Section */
+
+/* Brown Feature Banner */
+
+.featurebanner {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 31px 160px;
+    text-align: center;
+}
+
+.featurebanner span {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    line-height: 133%;
+}
+
+/* End Feature Banner */
+
+/* Stepper Section */
+
+.steppersec {
+    background: url(images/city-back-light-min.jpg) no-repeat bottom 60% center;
+    background-size: cover;
+}
+
+.stepperwrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+
+.stepblock {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 190px;
+}
+
+.stepblock img {
+    width: 100px;
+    padding-bottom: 16px;
+}
+
+/* End Stepper Section */
+
+/* Student Benefits Section */
+
+.studentsec {
+    background: #EAF2FA;
+}
+
+.studentwrap {
+    text-align: center;
+}
+
+.cardwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+    width: 90%;
+    margin: 71px auto;
+}
+
+.card {
+    display: flex;
+    background: #000000;
+    flex-direction: column;
+    flex: 1 0 31%;
+    text-align: left;
+    padding: 25px;
+    color: #ffffff;
+    height: 450px;
+    justify-content: flex-end;
+}
+
+#usedCard {
+    background-image: url(images/save-badge-2x.jpg), url(images/card-pics/optimized/card-used-equipment.jpg);
+    background-position: left top 0%, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 17%, auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#usedCard:hover {
+    background-size: auto 17%, auto 120%;
+}
+
+#photobookCard {
+    background-image: url(images/save-badge-2x.jpg), url(images/card-pics/optimized/card-photo-book.jpg);
+    background-position: left top 0%, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 17%, auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#photobookCard:hover {
+    background-size: auto 17%, auto 120%;
+}
+
+#photolabCard {
+    background-image: url(images/save-badge-2x.jpg), url(images/card-pics/optimized/card-photo-lab.jpg);
+    background-position: left top 0%, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 17%, auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#photolabCard:hover {
+    background-size: auto 17%, auto 120%;
+}
+
+#rentalsCard {
+    background-image: url(images/save-badge-2x.jpg), url(images/card-pics/optimized/card-rentals.jpg);
+    background-position: left top 0%, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 17%, auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#rentalsCard:hover {
+    background-size: auto 17%, auto 120%;
+}
+
+#printingpaperCard {
+    background-image: url(images/save-badge-10-2x.jpg), url(images/card-pics/optimized/card-printing-paper.jpg);
+    background-position: left top 0%, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 17%, auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#printingpaperCard:hover {
+    background-size: auto 17%, auto 120%;
+}
+
+#classesandeventsCard {
+    background-image: url(images/card-pics/optimized/card-classes-events.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#classesandeventsCard:hover {
+    background-size: auto 120%;
+}
+
+#prosupportCard {
+    background-image: url(images/card-pics/optimized/card-pro-support.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#prosupportCard:hover {
+    background-size: auto 120%;
+}
+
+#customkitsCard {
+    background-image: url(images/card-pics/optimized/card-custom-kits.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#customkitsCard:hover {
+    background-size: auto 120%;
+}
+
+#repairsCard {
+    background-image: url(images/card-pics/optimized/card-repairs.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 105%;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#repairsCard:hover {
+    background-size: auto 120%;
+}
+
+.card h3 {
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+/* End Student Benefits Section */
+
+/* Start Educator Benefits Section */
+
+.eduwrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    gap: 10%;
+}
+
+.eduwrap>div {
+    flex: 0 0 40%;
+}
+
+#edutxt {
+    align-self: center;
+}
+
+#edutxt>div {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#edutxt ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    gap: 17px;
+    width: 80%;
+    list-style-type: none;
+}
+
+#edutxt ul li:before {
+    content: "+";
+    color: #0083FF;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */
+}
+
+.educatorsec {
+    background: url(images/educator-circle-back.png) no-repeat top left;
+    background-size: auto 100%;
+}
+
+/* End Educator Benefits Section */
+
+/* Start We Buy Used Section */
+
+.usedsec {
+    background: url(images/circle-deco.png), url(images/dots-deco.png);
+    background-position: left 7% top, right 7% bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 50%, auto 70%;
+}
+
+.usedwrap {
+    background: url(images/used-cam-back.png), #202020;
+    background-position: left, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto 101%, cover;
+    border-radius: 16px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 41px;
+    filter: drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.25));
+    margin-top: 10px;
+}
+
+.usedtxt {
+    color: #ffffff;
+    width: 50%;
+    margin-left: 34%;
+}
+
+.usedtxt a {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+/* End We Buy Used Section */
+
+/* Start Social Video Section */
+
+.socialsec {
+    background: #F5F5F5;
+}
+
+.socialwrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 71px auto;
+
+}
+
+#socialtxt {
+    text-align: left;
+    padding-right: 10%;
+    min-width: 436px;
+}
+
+.social-link-block {
+    text-decoration: none;
+    color: #000000;
+}
+
+.social-link-block>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #ffffff;
+    font-weight: 300;
+}
+
+.social-link-block img {
+    width: 40px;
+    margin-right: 16px;
+}
+
+.social-link-block span {
+    font-weight: 700;
+}
+
+#video-panel {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 45px 42px;
+    min-width: 479px;
+    flex: 0 0 60%;
+}
+
+#video-panel-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#video-panel-head svg {
+    display: inline;
+}
+
+#vid-link-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.vid-link-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 6px;
+    color: #000000;
+}
+
+.vid-link-block>div {
+    width: 100%;
+    padding-left: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    padding-right: 12px;
+}
+
+.timeblock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .75em;
+}
+
+.vid-link-block img {
+    width: 170px;
+}
+
+/* End Social Video Section */
+
+/* Start FAQ Section */
+
+.faqsec {
+    background: #FAF5EF;
+}
+
+.faqwrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 10px 0;
+    border-radius: 0.5rem;
+}
+
+.accordion-item-header {
+    padding: 34px 0px 34px 34px;
+    min-height: 3.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header::after {
+    content: "\2303";
+    transform: rotate(180deg);
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.1s;
+}
+
+.accordion-item-header.active::after {
+    transform: rotate(0deg);
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+    padding: 0px 0px 34px 34px;
+}
+
+/* End FAQ Section */
+
+/* Start Contact Us Section */
+
+.contactsec>p {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contactwrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 71px;
+    gap: 15px;
+    align-items: center;
+}
+
+#contactpic {
+    flex: 0 0 40%;
+}
+
+#contact-txt {
+    border-radius: 16px;
+    background: #9BA9AE;
+    padding: 47px;
+    color: #ffffff;
+    flex: 0 0 60%;
+}
+
+.contact-form-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 24px;
+    gap: 53px;
+}
+
+#contact-txt h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+#contactinfo {
+    flex: 0 0 40%;
+}
+
+#contactinfo h4.smallheading {
+    font-size: 1.2em;
+}
+
+#contactinfo>div:nth-child(2) {
+    margin-top: 18px;
+}
+
+#contact-form>div:not(:first-child) {
+    margin-top: 24px;
+}
+
+#contact-form label,
+input,
+textarea {
+    display: block;
+}
+
+#contact-form input {
+    border: 0;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 304px;
+}
+
+#contact-form textarea {
+    border: 0;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.submitbtn button {
+    font-family: 'Pacifico', cursive;
+    color: #ffffff;
+    background: #6D6D6D;
+    border: 0px;
+    padding: 6px 61px;
+    transition: background .4s;
+}
+
+.submitbtn button:hover {
+    background: #464646;
+}
+
+/* End Contact Us Section */
+
+/* Start Brand Logo Slider */
+
+.brandslider {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: -100%;
+    position: relative;
+    top: 70px;
+}
+
+.sliderwrap {
+    text-align: center;
+    background: #ffffff;
+    padding: 34px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 16px -3px rgba(0, 0, 0, 0.29);
+}
+
+/* End Brand Logo Slider */
