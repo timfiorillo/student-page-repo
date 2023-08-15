@@ -126,13 +126,45 @@ html {
     line-height: 133.9%;
 }
 
+.cs-button-solid {
+    line-height: 2.5;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    min-width: 17.375em;
+    padding: 0 1.5rem;
+    border-radius: 30.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 30.25rem;
+    transition: width .3s;
+}
+
+.cs-button-solid:hover:before {
+    width: 100%;
+}
+
 /* Start Hero Section */
 
 .hero {
     background: url(images/white-blob.png), url(images/mask-group-min.png);
     background-position: left bottom 0%, left 22px top 15%;
     background-repeat: no-repeat, no-repeat;
-    background-size: auto 150%, cover;
+    background-size: 80%, cover;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -197,6 +229,42 @@ html {
     width: 40%;
 }
 
+/* Tablet - 749px */
+@media only screen and (max-width: 749px) {
+
+    .hero {
+        flex-direction: column-reverse;
+        gap: 2em;
+        background: url(images/light-tan-blob.png), url(images/mask-group-min.png);
+        background-position: top left, bottom center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 75%, auto 50%;
+    }
+
+    .heropics {
+        width: 80%;
+    }
+
+    .heroinfo {
+        width: 100%;
+        padding: 3em;
+        border-radius: 16px;
+        background: #ffffffde;
+        text-align: center;
+    }
+
+    .heroinfo p {
+        width: 100%;
+    }
+
+    .herolinks {
+        justify-content: center;
+        gap: 24px;
+        width: 100%;
+    }
+
+}
+
 /* End Hero Section */
 
 /* Brown Feature Banner */
@@ -220,6 +288,24 @@ html {
     line-height: 133%;
 }
 
+.featurebanner div {
+    flex: 0 0 25%;
+}
+
+@media only screen and (max-width: 749px) {
+
+    .featurebanner {
+        row-gap: 31px;
+        justify-content: space-between;
+        padding: 31px 60px;
+    }
+
+    .featurebanner div {
+        flex: 0 0 50%;
+    }
+
+}
+
 /* End Feature Banner */
 
 /* Stepper Section */
@@ -233,8 +319,8 @@ html {
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
-    justify-content: space-evenly;
-    row-gap: 50px;
+    justify-content: space-between;
+    row-gap: 10px;
 }
 
 .stepblock {
@@ -242,12 +328,52 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 0 0 190px;
+    flex: 0 0 17%;
 }
 
 .stepblock img {
     width: 100px;
     padding-bottom: 16px;
+}
+
+.cs-arrow {
+    /* 48px - 80px */
+    height: auto;
+    display: block;
+    flex: 0 0 10%;
+}
+
+.cs-arrow-img {
+    width: 100%;
+    display: block;
+}
+
+.arrow-under {
+    margin-top: 30px;
+}
+
+/* Tablet - 749px */
+@media only screen and (max-width: 749px) {
+
+    .steppersec {
+        background: url(images/city-back-light-min.jpg) no-repeat bottom center;
+        background-size: auto 50%;
+    }
+
+    .stepperwrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow-under {
+        margin-top: unset;
+    }
+
+    .cs-arrow {
+        transform: rotate(90deg);
+        width: 100px;
+        margin: 30px 0px;
+    }
 }
 
 /* End Stepper Section */
@@ -417,6 +543,106 @@ html {
     margin-bottom: 8px;
 }
 
+@media only screen and (max-width: 1029px) {
+
+    .cardwrap {
+        justify-content: center;
+    }
+
+    .card {
+        flex: 0 0 48%;
+    }
+
+    #usedCard {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #usedCard:hover {
+        background-size: auto 17%, auto 140%;
+    }
+
+    #photobookCard {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #photobookCard:hover {
+        background-size: auto 17%, auto 140%;
+    }
+
+    #photolabCard {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #photolabCard:hover {
+        background-size: auto 17%, auto 140%;
+    }
+
+    #rentalsCard {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #rentalsCard:hover {
+        background-size: auto 17%, auto 140%;
+    }
+
+    #printingpaperCard {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #printingpaperCard:hover {
+        background-size: auto 17%, auto 140%;
+    }
+
+    #classesandeventsCard {
+        background-size: auto 120%;
+    }
+
+    #classesandeventsCard:hover {
+        background-size: auto 140%;
+    }
+
+    #prosupportCard {
+        background-size: auto 120%;
+    }
+
+    #prosupportCard:hover {
+        background-size: auto 140%;
+    }
+
+    #customkitsCard {
+        background-size: auto 120%;
+    }
+
+    #customkitsCard:hover {
+        background-size: auto 140%;
+    }
+
+    #repairsCard {
+        background-size: auto 120%;
+    }
+
+    #repairsCard:hover {
+        background-size: auto 140%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 804px) {
+    .card {
+        flex: 0 0 47%;
+    }
+}
+
+@media only screen and (max-width: 610px) {
+    .card {
+        flex: 0 0 90%;
+    }
+}
+
+
+
 /* End Student Benefits Section */
 
 /* Start Educator Benefits Section */
@@ -425,7 +651,7 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -470,7 +696,61 @@ html {
 
 .educatorsec {
     background: url(images/educator-circle-back.png) no-repeat top left;
-    background-size: auto 100%;
+    background-size: 55%;
+}
+
+@media only screen and (max-width: 805px) {
+
+    .educatorsec {
+        background-position: top left;
+        background-size: 70%;
+    }
+
+    .eduwrap {
+        flex-direction: column;
+    }
+
+    #edupic {
+        flex: none;
+        width: 50%;
+    }
+
+    #edutxt {
+        margin: 71px 0px;
+    }
+
+}
+
+@media only screen and (max-width: 699px) {
+
+
+    .eduwrap {
+        flex-direction: column;
+        row-gap: 64px;
+    }
+
+    #edupic {
+        flex: none;
+        width: 80%;
+    }
+
+    #edutxt {
+        width: 100%;
+    }
+
+    #edutxt>div {
+        text-align: center;
+        align-items: center;
+    }
+
+    #edutxt h2 {
+        text-align: center;
+    }
+
+    .eduwrap ul {
+        text-align: left;
+    }
+
 }
 
 /* End Educator Benefits Section */
@@ -497,6 +777,10 @@ html {
     margin-top: 10px;
 }
 
+.usedwrap img {
+    display: none;
+}
+
 .usedtxt {
     color: #ffffff;
     width: 50%;
@@ -506,6 +790,54 @@ html {
 .usedtxt a {
     color: #ffffff;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 933px) {
+    .usedsec {
+        padding: 55px 0px;
+    }
+
+    .usedwrap {
+        padding: 41px 0px;
+        width: 100%;
+    }
+
+    .usedtxt {
+
+        margin-left: 44%;
+    }
+
+}
+
+@media only screen and (max-width: 723px) {
+
+    .usedwrap {
+        background: #202020;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .usedwrap img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 24px;
+        position: absolute;
+        top: -100px;
+    }
+
+    .usedtxt {
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        margin-top: 94px;
+    }
+
+    .usedtxt h2 {
+        text-align: center;
+    }
+
 }
 
 
@@ -613,6 +945,21 @@ html {
     width: 170px;
 }
 
+@media only screen and (max-width: 949px) {
+
+    .socialwrap {
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+
+    #socialtxt {
+        padding: 0;
+        width: 60%;
+    }
+
+}
+
 /* End Social Video Section */
 
 /* Start FAQ Section */
@@ -641,6 +988,7 @@ html {
     align-items: center;
     position: relative;
     cursor: pointer;
+    padding-right: 60px;
 }
 
 .accordion-item-header::after {
@@ -665,6 +1013,15 @@ html {
 
 .accordion-item-body-content {
     padding: 0px 0px 34px 34px;
+}
+
+/* Tablet - 749px */
+@media only screen and (max-width: 749px) {
+
+    .faqwrap {
+        width: 100%;
+    }
+
 }
 
 /* End FAQ Section */
@@ -759,24 +1116,73 @@ textarea {
     background: #464646;
 }
 
-/* End Contact Us Section */
+@media only screen and (max-width: 1044px) {
 
-/* Start Brand Logo Slider */
+    .contactwrap {
+        flex-direction: column-reverse;
+    }
 
-.brandslider {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: -100%;
-    position: relative;
-    top: 70px;
+    #contact-txt {
+        width: 80%;
+        flex: none;
+    }
+
+    #contactpic {
+        flex: none;
+        width: 40%;
+    }
 }
 
-.sliderwrap {
-    text-align: center;
-    background: #ffffff;
-    padding: 34px;
-    border-radius: 16px;
-    box-shadow: 0px 4px 16px -3px rgba(0, 0, 0, 0.29);
-}
+@media only screen and (max-width: 855px) {
 
-/* End Brand Logo Slider */
+    .contact-form-wrap {
+        flex-direction: column-reverse;
+    }
+
+    .contactsec>p {
+        width: 80%;
+
+        #contact-txt {
+            width: 100%;
+        }
+
+        #contactpic {
+            width: 100%;
+        }
+
+        #contact-form input {
+            height: 50px;
+            max-width: unset;
+        }
+
+    }
+
+    /* End Contact Us Section */
+
+    /* Start Brand Logo Slider */
+
+    .brandslider {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: -100%;
+        position: relative;
+        top: 70px;
+    }
+
+    .sliderwrap {
+        text-align: center;
+        background: #ffffff;
+        padding: 34px;
+        border-radius: 16px;
+        box-shadow: 0px 4px 16px -3px rgba(0, 0, 0, 0.29);
+    }
+
+    @media only screen and (max-width: 749px) {
+
+        .brandslider {
+            padding: 0 !important;
+        }
+
+    }
+
+    /* End Brand Logo Slider */
