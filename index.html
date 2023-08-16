@@ -13,6 +13,66 @@
     <link rel="stylesheet" href="swiper/swiper-style.css">
 
 <body>
+    <!-- Form Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Student Information</h2>
+            </div>
+            <div class="modal-body bodytxt">
+                <form action="https://formspree.io/f/meqbawgl" method="POST" enctype="multipart/form-data"
+                    class="mainForm">
+                    <div class="infoWrap yourInfo">
+                        <label>
+                            Name <span class="required">*</span>
+                            <input type="text" name="name" required>
+                        </label>
+                        <label>
+                            Email <span class="required">*</span>
+                            <input type="email" name="email" required>
+                        </label>
+                        <label>
+                            Phone Number <span class="required">*</span>
+                            <input type="tel" name="phoneNumber">
+                        </label>
+                    </div>
+                    <div class="infoWrap schoolInfo">
+                        <label>
+                            School Name <span class="required">*</span>
+                            <input type="text" name="schoolName" required>
+                        </label>
+                        <label>
+                            Upload Student Photo ID <span class="required">*</span>
+                            <input type="file" name="upload" id="fileUpload" required>
+                        </label>
+                        <label>
+                            Years of Study
+                            <select name="yearsOfStudy" id="yearsOfStudy">
+                                <option value="0-4">0 - 4</option>
+                                <option value="4-8">4 - 8</option>
+                                <option value="8+">8+</option>
+                            </select>
+                        </label>
+                        <label>
+                            School Email Address
+                            <input type="email" name="schoolEmail">
+                        </label>
+                        <label>
+                            Instructor's Name
+                            <input type="text" name="instructorName">
+                        </label>
+                    </div>
+                    <div class="submitbtn" id="infoSubmit">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
     <div class="wrapall">
         <section class="hero">
             <div class="heroinfo bodytxt">
@@ -57,10 +117,10 @@
                             </defs>
                         </svg><span>Educator</span> Info</a>
                 </div>
-                <button class="bluebtn cs-button-solid">Get Started</button> <!--Open Modal-->
+                <button class="bluebtn cs-button-solid" id="myBtn">Get Started</button> <!--Open Modal-->
             </div>
             <div class="heropics">
-                <img src="images/hero-image-min.png" alt="" />
+                <img src="images/hero-image-min.png" alt="Get Pro Support with Unique Photo!" decoding="async" />
             </div>
         </section>
         <div class="brown featurebanner">
@@ -73,7 +133,7 @@
             <h2 class="sectitle vertspacer">How does it work?</h2>
             <div class="stepperwrap vertspacer">
                 <div class="stepblock">
-                    <img src="images/id-icon.png" alt="Create an Account" />
+                    <img src="images/id-icon.png" alt="Create an Account" loading="lazy" decoding="async" />
                     <h3 class="smallheading">Create an Account</h3>
                     <p class="bodytxt" style="padding-top:23px;">Login or create a new Unique Photo
                         <a data-dialog="{&quot;width&quot;: &quot;775px&quot;, &quot;dialogClass&quot;:&quot;wl-interstitial&quot;}"
@@ -86,7 +146,7 @@
                         loading="lazy" decoding="async" aria-hidden="true">
                 </div>
                 <div class="stepblock">
-                    <img src="images/form-icon.png" alt="Submit Your Info" />
+                    <img src="images/form-icon.png" alt="Submit Your Info" loading="lazy" decoding="async" />
                     <h3 class="smallheading">Submit Your Info</h3>
                     <p class="bodytxt" style="padding-top:23px;">Fill out* and submit the <a href=""
                             class="blue clearlink boldlink">application form.</a></p>
@@ -96,7 +156,7 @@
                         loading="lazy" decoding="async" aria-hidden="true">
                 </div>
                 <div class="stepblock">
-                    <img src="images/verified-icon.png" alt="Get Approved" />
+                    <img src="images/verified-icon.png" alt="Get Approved" loading="lazy" decoding="async" />
                     <h3 class="smallheading">Get Approved</h3>
                     <p class="bodytxt" style="padding-top:23px;">Our staff will reach out to you once approved.</p>
                 </div>
@@ -105,13 +165,13 @@
                         loading="lazy" decoding="async" aria-hidden="true">
                 </div>
                 <div class="stepblock">
-                    <img src="images/cart-icon.png" alt="Shop & Save" />
+                    <img src="images/cart-icon.png" alt="Shop & Save" loading="lazy" decoding="async" />
                     <h3 class="smallheading">Shop & Save!</h3>
                     <p class="bodytxt" style="padding-top:23px;">Save immediately on select brands and services.</p>
                 </div>
             </div>
             <div class="center vertspacer">
-                <button class="bluebtn cs-button-solid">Submit Application</button> <!--Open Modal-->
+                <button class="bluebtn cs-button-solid" id="myBtn2">Submit Application</button> <!--Open Modal-->
                 <p class="subnote" style="margin-top:12px;">*A valid student ID or proof of syllabus is required for
                     approval.</p>
             </div>
@@ -150,7 +210,8 @@
                 <p class="bodytxt">Exclusive savings on equipment, rentals, and services.<br /> Our team of experts is
                     here to
                     help.</p>
-                <button class="bluebtn cs-button-solid" style="margin-top:16px;">Get Started</button> <!--Open Modal-->
+                <button class="bluebtn cs-button-solid" style="margin-top:16px;" id="myBtn3">Get Started</button>
+                <!--Open Modal-->
                 <div class="cardwrap">
                     <a href="/used" class="card clearlink" id="usedCard">
                         <h3>Used Equipment</h3>
@@ -196,7 +257,8 @@
             <div class="eduwrap topspacer">
 
                 <div id="edupic">
-                    <img src="images/photo-teacher-1.png" alt="Become an Educator at Unique!" />
+                    <img src="images/photo-teacher-1.png" alt="Become an Educator at Unique!" loading="lazy"
+                        decoding="async" />
                 </div>
                 <div id="edutxt">
                     <div>
@@ -230,7 +292,7 @@
         </section>
         <section class="block usedsec vertspacer">
             <div class="usedwrap">
-                <img src="images/used-mobile-pic.png" alt="Used camera photo" />
+                <img src="images/used-mobile-pic.png" alt="Used camera photo" loading="lazy" decoding="async" />
                 <div class="usedtxt">
                     <h2 class="sectitle left bottomspacer">We buy used gear!</h2>
                     <p class="bottomspacer2">Looking to make an upgrade? - We’ll work to find you the best value and
@@ -251,23 +313,28 @@
                     </p>
                     <div class="topspacer3">
                         <a href="https://youtube.com/UniquePhotoInc" class="social-link-block bodytxt">
-                            <div class="bottomspacer2"><img src="images/up-youtube.jpg" alt="" />
+                            <div class="bottomspacer2"><img src="images/up-youtube.jpg" alt="youtube.com/uniquephotoinc"
+                                    loading="lazy" decoding="async" />
                                 youtube.com<span>/UniquePhotoInc</span></div>
                         </a>
                         <a href="https://www.facebook.com/UniquePhoto/" class="social-link-block bodytxt">
-                            <div class="bottomspacer2"><img src="images/up-facebook.jpg" alt="" />
+                            <div class="bottomspacer2"><img src="images/up-facebook.jpg" alt="facebook.com/uniquephoto"
+                                    loading="lazy" decoding="async" />
                                 facebook.com<span>/UniquePhoto</span></div>
                         </a>
                         <a href="https://www.instagram.com/uniquephoto/" class="social-link-block bodytxt">
-                            <div class="bottomspacer2"><img src="images/up-instagram.jpg" alt="" />
+                            <div class="bottomspacer2"><img src="images/up-instagram.jpg"
+                                    alt="instagram.com/uniquephoto" loading="lazy" decoding="async" />
                                 instagram.com<span>/UniquePhoto</span></div>
                         </a>
                         <a href="https://twitter.com/uniquephoto" class="social-link-block bodytxt">
-                            <div class="bottomspacer2"><img src="images/up-twitter.jpg" alt="" />
+                            <div class="bottomspacer2"><img src="images/up-twitter.jpg" alt="twitter.com/uniquephoto"
+                                    loading="lazy" decoding="async" />
                                 twitter.com<span>/UniquePhoto</span></div>
                         </a>
                         <a href="/photoinsider" class="social-link-block bodytxt">
-                            <div class="bottomspacer2"><img src="images/up-blog.jpg" alt="" /> <span>Photo Insider
+                            <div class="bottomspacer2"><img src="images/up-blog.jpg" alt="Photo Insider Blog"
+                                    loading="lazy" decoding="async" /> <span>Photo Insider
                                     Blog</span></div>
                         </a>
                     </div>
@@ -285,7 +352,8 @@
                     </div>
                     <div id="vid-link-wrap">
                         <a href="https://youtu.be/K-HHSG2t_84" class="vid-link-block clearlink">
-                            <img src="images/ballooning-thumb.jpg" alt="NJ Festival of Ballooning Recap" />
+                            <img src="images/ballooning-thumb.jpg" alt="NJ Festival of Ballooning Recap" loading="lazy"
+                                decoding="async" />
                             <div>
                                 <h4 class="smallheading">NJ Festival of Ballooning 2023</h4>
                                 <div class="timeblock">
@@ -299,7 +367,8 @@
                             </div>
                         </a>
                         <a href="https://youtu.be/WtLFZeDRakk" class="vid-link-block clearlink">
-                            <img src="images/sony-filmmaker-thumb.jpg" alt="Sony Filmmaker's Bootcamp Recap Video" />
+                            <img src="images/sony-filmmaker-thumb.jpg" alt="Sony Filmmaker's Bootcamp Recap Video"
+                                loading="lazy" decoding="async" />
                             <div>
                                 <h4 class="smallheading">Sony Filmmakers Bootcamp with Taylor Ballantyne</h4>
                                 <div class="timeblock">
@@ -314,7 +383,8 @@
                         </a>
 
                         <a href="https://youtu.be/e1zkVl-V7uo" class="vid-link-block clearlink">
-                            <img src="images/canon-creators-thumb.jpg" alt="Canon Creator's Challenge Recap Video" />
+                            <img src="images/canon-creators-thumb.jpg" alt="Canon Creator's Challenge Recap Video"
+                                loading="lazy" decoding="async" />
                             <div>
                                 <h4 class="smallheading">Canon Creator’s Challenge with Atiba Jefferson</h4>
                                 <div class="timeblock">
@@ -426,7 +496,8 @@
                 catered specifically to any needs. Let us know how we can help!</p>
             <div class="contactwrap">
                 <div id="contactpic">
-                    <img src="images/crew-photo.jpg" alt="Group photo of our Philly team" />
+                    <img src="images/crew-photo.jpg" alt="Group photo of our Philly team" loading="lazy"
+                        decoding="async" />
                 </div>
                 <div id="contact-txt">
                     <h3 class="pacifico">Contact Us</h3>
@@ -483,6 +554,43 @@
     <!--   Swiper   -->
     <script src='swiper/swiper.min.js'></script>
     <script src="swiper/swiper-script.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        btn2.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        btn3.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
