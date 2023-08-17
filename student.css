@@ -164,6 +164,34 @@ html {
     width: 100%;
 }
 
+.cs-button-square {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: color .3s;
+}
+
+.cs-button-square:hover {
+    color: white;
+}
+
+.cs-button-square:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .3s;
+}
+
+.cs-button-square:hover:before {
+    width: 100%;
+}
+
 /* Start Hero Section */
 
 .hero {
@@ -927,6 +955,27 @@ html {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 6px;
     color: #000000;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    transition: background .3s;
+}
+
+.vid-link-block:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .3s;
+    background: #e9f2fa;
+}
+
+.vid-link-block:hover:before {
+    width: 100%;
 }
 
 .vid-link-block>div {
@@ -1257,6 +1306,7 @@ textarea {
     top: 2%;
     background-color: #EAF2FA;
     margin: auto;
+    margin-bottom: 5%;
     padding: 0;
     border: 1px solid #888;
     width: 40%;
@@ -1326,8 +1376,7 @@ textarea {
 
 .infoWrap {
     background: #0283ff26;
-    padding: 8px 24px;
-    border-radius: 16px;
+    padding: 8px 24px 16px 24px;
 }
 
 .schoolInfo {
