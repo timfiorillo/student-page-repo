@@ -1,0 +1,1317 @@
+<link rel='stylesheet'
+    href='https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/swiper/swiper2.min.css'>
+<link rel="stylesheet"
+    href="https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/swiper/swiper-style3.css">
+<script type="text/javascript" async=""
+    src="https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__en.js" crossorigin="anonymous"
+    integrity="sha384-ToIRK/fCxk6HZidjy8su24Pn+8FsKiX4QnuO0AfQZBcsd0m8DMaqafsc91h4byqU"></script>
+
+
+<style>
+    /* FONT FAMIILIES */
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@700&family=Source+Sans+3:wght@400;700&display=swap');
+
+    /*Call With
+
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+
+*/
+
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+
+    /* Main Wrapper */
+    .wrapall {
+        line-height: 1.5;
+        font-family: source_sans_proregular, helvetica, arial, sans-serif;
+        font-size: 16px;
+    }
+
+    .wrapall h2,
+    h3,
+    h4 {
+        padding: unset;
+        color: unset;
+        border: unset;
+    }
+
+
+
+    .pacifico {
+        font-family: 'Pacifico', cursive;
+        text-transform: none;
+    }
+
+    .wrapall section {
+        padding: 55px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        .wrapall section {
+            padding: 15px;
+        }
+    }
+
+    .sectitle {
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5em;
+        letter-spacing: 1.8px;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .vertspacer {
+        margin: 71px 0px;
+    }
+
+    .topspacer {
+        margin-top: 71px;
+    }
+
+    .topspacer2 {
+        margin-top: 16px;
+    }
+
+    .topspacer3 {
+        margin-top: 32px;
+    }
+
+    .topspacer1 {
+        margin-top: 8px;
+    }
+
+    .bottomspacer {
+        margin-bottom: 8px;
+    }
+
+    .bottomspacer2 {
+        margin-bottom: 16px;
+    }
+
+    .bodytxt {
+        color: #6D6D6D;
+        font-size: 1em;
+    }
+
+    .white {
+        color: #ffffff;
+    }
+
+    .bodytxt p {
+        margin-bottom: 20px;
+    }
+
+    .accent {
+        color: #9BA9AE;
+    }
+
+    .blue {
+        color: #0083FF;
+    }
+
+    .brown {
+        background: #AD9983;
+    }
+
+    .clearlink {
+        text-decoration: none;
+    }
+
+    .boldlink {
+        font-weight: 700;
+    }
+
+    .bluebtn {
+        border-radius: 25px;
+        background: #0083FF;
+        color: #FFFFFF;
+        padding: 6px 76px;
+        border: 0px;
+        font-family: source_sans_proregular, helvetica, arial, sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+    }
+
+    .smallheading {
+        font-family: 'Source Sans 3', arial, sans-serif;
+        font-size: 1em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 133.9%;
+        text-transform: none;
+        border-bottom: 0px;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .subnote {
+        font-style: italic;
+        font-size: .875em;
+        line-height: 133.9%;
+    }
+
+    .cs-button-solid {
+        line-height: 2.5;
+        text-decoration: none;
+        text-align: center;
+        margin: 0;
+        min-width: 17.375em;
+        padding: 0 1.5rem;
+        border-radius: 30.25rem;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+
+    .cs-button-solid:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 30.25rem;
+        transition: width .3s;
+    }
+
+    .cs-button-solid:hover:before {
+        width: 100%;
+    }
+
+    .cs-button-square {
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        transition: color .3s;
+    }
+
+    .cs-button-square:hover {
+        color: white;
+    }
+
+    .cs-button-square:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width .3s;
+    }
+
+    .cs-button-square:hover:before {
+        width: 100%;
+    }
+
+    /* Start Hero Section */
+
+    .hero {
+        background: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/white-blob.png), url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/mask-group-min.png);
+        background-position: left bottom 0%, left 22px top 15%;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 80%, cover;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heroinfo {
+        background: #ffffff;
+        width: 455px;
+    }
+
+    .heroinfo p {
+        width: 83%;
+    }
+
+    .heroinfo>.accent {
+        font-size: 1.2em;
+        letter-spacing: .05em;
+        font-weight: 400;
+    }
+
+    .maintitle {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2em;
+        color: #000000;
+        letter-spacing: .02em;
+        line-height: 133.9%;
+        width: 100% !important;
+    }
+
+    .herolinks {
+        margin-bottom: 46px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 250px;
+    }
+
+    .herolinks a {
+        color: unset;
+        text-decoration: none;
+        border-bottom: 1.5px solid #0083FF;
+        padding-bottom: 3px;
+        display: inline-flex;
+        align-items: center;
+        justify-items: center;
+        width: fit-content;
+    }
+
+    .herolinks a svg {
+        margin-right: 8px;
+        transform: scale(1.2);
+    }
+
+    .herolinks a span {
+        font-weight: 700;
+        padding-right: 3px;
+    }
+
+    .heropics {
+        width: 40%;
+    }
+
+    /* Tablet - 749px */
+    @media only screen and (max-width: 749px) {
+
+        .hero {
+            flex-direction: column-reverse;
+            gap: 2em;
+            background: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/light-tan-blob.png), url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/mask-group-min.png);
+            background-position: top left, bottom center;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 75%, auto 50%;
+        }
+
+        .heropics {
+            width: 80%;
+        }
+
+        .heroinfo {
+            width: 100%;
+            padding: 1em;
+            box-sizing: border-box;
+            border-radius: 16px;
+            background: #ffffffde;
+            text-align: center;
+        }
+
+        .heroinfo p {
+            width: 100%;
+        }
+
+        .herolinks {
+            justify-content: center;
+            gap: 24px;
+            width: 100%;
+        }
+
+    }
+
+    /* End Hero Section */
+
+    /* Brown Feature Banner */
+
+    .featurebanner {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 31px 160px;
+        text-align: center;
+    }
+
+    .featurebanner span {
+        display: block;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 2em;
+        text-transform: uppercase;
+        line-height: 133%;
+    }
+
+    .featurebanner div {
+        flex: 0 0 25%;
+    }
+
+    @media only screen and (max-width: 749px) {
+
+        .featurebanner {
+            row-gap: 31px;
+            justify-content: space-between;
+            padding: 31px 60px;
+        }
+
+        .featurebanner div {
+            flex: 0 0 50%;
+        }
+
+    }
+
+    /* End Feature Banner */
+
+    /* Stepper Section */
+
+    .steppersec {
+        background: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/city-back-light-min.jpg) no-repeat bottom 60% center;
+        background-size: cover;
+    }
+
+    .stepperwrap {
+        display: flex;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        justify-content: space-between;
+        row-gap: 10px;
+    }
+
+    .stepblock {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 17%;
+    }
+
+    .stepblock img {
+        width: 100px;
+        padding-bottom: 16px;
+    }
+
+    .cs-arrow {
+        /* 48px - 80px */
+        height: auto;
+        display: block;
+        flex: 0 0 10%;
+    }
+
+    .cs-arrow-img {
+        width: 100%;
+        display: block;
+    }
+
+    .arrow-under {
+        margin-top: 30px;
+    }
+
+    /* Tablet - 749px */
+    @media only screen and (max-width: 749px) {
+
+        .steppersec {
+            background: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/city-back-light-min.jpg) no-repeat bottom center;
+            background-size: auto 50%;
+        }
+
+        .stepperwrap {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .arrow-under {
+            margin-top: unset;
+        }
+
+        .cs-item {
+            padding: 20px;
+        }
+
+        .cs-arrow {
+            transform: rotate(90deg);
+            width: 100px;
+            margin: 30px 0px;
+        }
+    }
+
+    /* End Stepper Section */
+
+    /* Student Benefits Section */
+
+    .studentsec {
+        background: #EAF2FA;
+    }
+
+    .studentwrap {
+        text-align: center;
+    }
+
+    .cardwrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 25px;
+        margin: 71px auto;
+    }
+
+    .card {
+        display: flex;
+        background: #000000;
+        flex-direction: column;
+        flex: 1 0 26%;
+        text-align: left;
+        padding: 25px;
+        color: #ffffff;
+        height: 450px;
+        justify-content: flex-end;
+    }
+
+    .card:hover {
+        text-decoration: none;
+    }
+
+    #usedCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/save-badge-2x.jpg), url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/card-pics/optimized/card-used-equipment.jpg);
+        background-position: left top 0%, center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto 17%, auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #usedCard:hover {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #photobookCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/save-badge-2x.jpg), url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/card-pics/optimized/card-photo-book.jpg);
+        background-position: left top 0%, center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto 17%, auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #photobookCard:hover {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #photolabCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/save-badge-2x.jpg), url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/photo-lab-card.jpg);
+        background-position: left top 0%, center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto 17%, auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #photolabCard:hover {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #rentalsCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/save-badge-2x.jpg), url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/card-pics/optimized/card-rentals.jpg);
+        background-position: left top 0%, center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto 17%, auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #rentalsCard:hover {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #printingpaperCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/save-badge-10-2x.jpg), url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/card-pics/optimized/card-printing-paper.jpg);
+        background-position: left top 0%, center center;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto 17%, auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #printingpaperCard:hover {
+        background-size: auto 17%, auto 120%;
+    }
+
+    #classesandeventsCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/card-pics/optimized/card-classes-events.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #classesandeventsCard:hover {
+        background-size: auto 120%;
+    }
+
+    #prosupportCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/card-pics/optimized/card-pro-support.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #prosupportCard:hover {
+        background-size: auto 120%;
+    }
+
+    #customkitsCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/card-pics/optimized/card-custom-kits.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #customkitsCard:hover {
+        background-size: auto 120%;
+    }
+
+    #repairsCard {
+        background-image: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/card-pics/optimized/card-repairs.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: auto 105%;
+        -moz-transition: all 0.1s ease-in-out;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #repairsCard:hover {
+        background-size: auto 120%;
+    }
+
+    .card span:first-child {
+        text-transform: uppercase;
+        letter-spacing: .04em;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+        font-weight: 700;
+    }
+
+    @media only screen and (max-width: 1029px) {
+
+        .cardwrap {
+            justify-content: center;
+        }
+
+
+        #usedCard {
+            background-size: auto 17%, auto 120%;
+        }
+
+        #usedCard:hover {
+            background-size: auto 17%, auto 140%;
+        }
+
+        #photobookCard {
+            background-size: auto 17%, auto 120%;
+        }
+
+        #photobookCard:hover {
+            background-size: auto 17%, auto 140%;
+        }
+
+        #photolabCard {
+            background-size: auto 17%, auto 120%;
+        }
+
+        #photolabCard:hover {
+            background-size: auto 17%, auto 140%;
+        }
+
+        #rentalsCard {
+            background-size: auto 17%, auto 120%;
+        }
+
+        #rentalsCard:hover {
+            background-size: auto 17%, auto 140%;
+        }
+
+        #printingpaperCard {
+            background-size: auto 17%, auto 120%;
+        }
+
+        #printingpaperCard:hover {
+            background-size: auto 17%, auto 140%;
+        }
+
+        #classesandeventsCard {
+            background-size: auto 120%;
+        }
+
+        #classesandeventsCard:hover {
+            background-size: auto 140%;
+        }
+
+        #prosupportCard {
+            background-size: auto 120%;
+        }
+
+        #prosupportCard:hover {
+            background-size: auto 140%;
+        }
+
+        #customkitsCard {
+            background-size: auto 120%;
+        }
+
+        #customkitsCard:hover {
+            background-size: auto 140%;
+        }
+
+        #repairsCard {
+            background-size: auto 120%;
+        }
+
+        #repairsCard:hover {
+            background-size: auto 140%;
+        }
+
+
+
+    }
+
+    @media only screen and (max-width: 610px) {
+        .card {
+            flex: 0 0 90%;
+            box-sizing: border-box;
+        }
+
+        .studentwrap {
+            padding-top: 160px;
+        }
+
+    }
+
+
+
+    /* End Student Benefits Section */
+
+    /* Start Educator Benefits Section */
+
+    .eduwrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        gap: 10%;
+    }
+
+    .eduwrap>div {
+        flex: 0 0 40%;
+    }
+
+    #edutxt {
+        align-self: center;
+    }
+
+    #edutxt>div {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #edutxt ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        gap: 17px;
+        width: 80%;
+        list-style-type: none;
+    }
+
+    #edutxt ul li:before {
+        content: "+";
+        color: #0083FF;
+        font-weight: bold;
+        font-size: 1.3em;
+        display: inline-block;
+        /* Needed to add space between the bullet and the text */
+        width: 1em;
+        /* Also needed for space (tweak if needed) */
+        margin-left: -1em;
+        /* Also needed for space (tweak if needed) */
+    }
+
+    .educatorsec {
+        background: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/educator-circle-back.png) no-repeat top left;
+        background-size: 55%;
+    }
+
+    @media only screen and (max-width: 805px) {
+
+        .educatorsec {
+            background-position: top left;
+            background-size: 70%;
+        }
+
+        .eduwrap {
+            flex-direction: column;
+        }
+
+        #edupic {
+            flex: none;
+            width: 50%;
+        }
+
+        #edutxt {
+            margin: 71px 0px;
+        }
+
+    }
+
+    @media only screen and (max-width: 699px) {
+
+
+        .eduwrap {
+            flex-direction: column;
+            row-gap: 64px;
+        }
+
+        #edupic {
+            flex: none;
+            width: 80%;
+        }
+
+        #edutxt {
+            width: 100%;
+        }
+
+        #edutxt>div {
+            text-align: center;
+            align-items: center;
+        }
+
+        #edutxt h2 {
+            text-align: center;
+        }
+
+        .eduwrap ul {
+            text-align: left;
+        }
+
+    }
+
+    /* End Educator Benefits Section */
+
+    /* Start We Buy Used Section */
+
+    .usedsec {
+        background: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/circle-deco.png), url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/dots-deco.png);
+        background-position: left 7% top, right 7% bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto 50%, auto 70%;
+    }
+
+    .usedwrap {
+        position: relative;
+        background: url(https://uniquephoto.azureedge.net/resources/uniquephoto/studentpage/images/used-cam-back.png), #202020;
+        background-position: left, left top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: auto 101%, cover;
+        border-radius: 16px;
+        width: 85%;
+        margin: 0 auto;
+        padding: 41px;
+        filter: drop-shadow(0px 5px 12px rgba(0, 0, 0, 0.25));
+        margin-top: 10px;
+    }
+
+    .usedwrap img {
+        display: none;
+    }
+
+    .usedtxt {
+        color: #ffffff;
+        width: 50%;
+        margin-left: 34%;
+    }
+
+    .usedtxt a {
+        color: #ffffff;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 933px) {
+        .usedsec {
+            padding: 55px 0px;
+        }
+
+        .usedwrap {
+            padding: 41px 0px;
+            width: 100%;
+        }
+
+        .usedtxt {
+
+            margin-left: 44%;
+        }
+
+    }
+
+    @media only screen and (max-width: 723px) {
+
+        .usedwrap {
+            background: #202020;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .usedwrap img {
+            display: block;
+            width: 200px;
+            height: 200px;
+            margin-bottom: 24px;
+            position: absolute;
+            top: -100px;
+        }
+
+        .usedtxt {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            margin-top: 94px;
+        }
+
+        .usedtxt h2 {
+            text-align: center;
+        }
+
+    }
+
+
+    /* End We Buy Used Section */
+
+    /* Start Social Video Section */
+
+    .socialsec {
+        background: #F5F5F5;
+    }
+
+    .socialwrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: 71px auto;
+        gap: 10%;
+    }
+
+    #socialtxt {
+        text-align: left;
+        flex: 0 0 35%;
+    }
+
+    .social-link-block {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    .social-link-block>a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background: #ffffff;
+        font-weight: 300;
+        text-decoration: none;
+        color: unset;
+    }
+
+    .social-link-block img {
+        width: 40px;
+        margin-right: 16px;
+    }
+
+    .social-link-block span {
+        font-weight: 700;
+    }
+
+    #video-panel {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 45px 42px;
+    }
+
+    #video-panel-head {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #video-panel-head svg {
+        display: inline;
+    }
+
+    #vid-link-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 25px;
+    }
+
+    .vid-link-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 6px;
+        color: #000000;
+        position: relative;
+        z-index: 1;
+        box-sizing: border-box;
+        transition: background .3s;
+    }
+
+    .vid-link-block:before {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width .3s;
+        background: #e9f2fa;
+    }
+
+    .vid-link-block:hover {
+        text-decoration: 0;
+    }
+
+    .vid-link-block:hover:before {
+        width: 100%;
+    }
+
+    .vid-link-block>span {
+        width: 100%;
+        padding-left: 19px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-around;
+        padding-right: 12px;
+    }
+
+    .timeblock {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: .75em;
+    }
+
+    .vid-link-block img {
+        width: 170px;
+    }
+
+    @media only screen and (max-width: 949px) {
+
+        .socialwrap {
+            flex-direction: column;
+            gap: 2em;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+        }
+
+        #socialtxt {
+            padding: 0;
+            min-width: unset;
+        }
+
+        #video-panel {
+            min-width: unset;
+            padding: 24px 16px;
+        }
+    }
+
+    /* End Social Video Section */
+
+    /* Start FAQ Section */
+
+    .faqsec {
+        background: #FAF5EF;
+    }
+
+    .faqwrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .accordion-item {
+        background-color: #fff;
+        color: #111;
+        margin: 10px 0;
+        border-radius: 0.5rem;
+    }
+
+    .accordion-item-header {
+        padding: 34px 0px 34px 34px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        padding-right: 60px;
+    }
+
+    .accordion-item-header::after {
+        content: "\2303";
+        transform: rotate(180deg);
+        font-size: 2rem;
+        font-weight: 700;
+        position: absolute;
+        right: 1rem;
+        transition: transform 0.1s;
+    }
+
+    .accordion-item-header.active::after {
+        transform: rotate(0deg);
+    }
+
+    .accordion-item-body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .accordion-item-body-content {
+        padding: 0px 0px 34px 34px;
+    }
+
+    /* Tablet - 749px */
+    @media only screen and (max-width: 749px) {
+
+        .faqwrap {
+            width: 100%;
+        }
+
+    }
+
+    /* End FAQ Section */
+
+    /* Start Contact Us Section */
+
+    .contactsec>p {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contactwrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 71px;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #contactpic {
+        flex: 0 0 37.5%;
+    }
+
+    #contact-txt {
+        border-radius: 16px;
+        background: #9BA9AE;
+        padding: 47px;
+        color: #ffffff;
+        flex: 0 0 60%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact-form-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 24px;
+        gap: 53px;
+    }
+
+    #contact-txt h3 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    #contactinfo {
+        flex: 0 0 40%;
+    }
+
+    #contactinfo h4.smallheading {
+        font-size: 1.2em;
+    }
+
+    #contactinfo>div:nth-child(2) {
+        margin-top: 18px;
+    }
+
+    #contactformblock {
+        width: 100%;
+    }
+
+    .submitbtn input {
+        font-family: 'Pacifico', cursive;
+        color: #ffffff;
+        background: #6D6D6D;
+        border: 0px;
+        padding: 6px 61px;
+        transition: background .4s;
+    }
+
+    .submitbtn input:hover {
+        background: #464646;
+    }
+
+    span.pairing-label {
+        display: none;
+    }
+
+    .pairing-content {
+        width: 90% !important;
+    }
+
+    div#vDynamicForm-responseForm-actionList-1 {
+        margin-top: 16px;
+        margin-left: 11px;
+    }
+
+    .captcha__container {
+        margin: 11px;
+    }
+
+
+
+    @media only screen and (max-width: 1044px) {
+
+        .contactwrap {
+            flex-direction: column-reverse;
+        }
+
+        #contact-txt {
+            width: 80%;
+            flex: none;
+            align-self: unset;
+        }
+
+        #contactpic {
+            flex: none;
+            width: 40%;
+        }
+    }
+
+    @media only screen and (max-width: 855px) {
+
+        .contact-form-wrap {
+            flex-direction: column-reverse;
+        }
+
+        .contactsec>p {
+            width: 80%;
+        }
+
+        #contact-txt {
+            width: 100%;
+            padding: 35px;
+            box-sizing: border-box;
+        }
+
+        #contactpic {
+            width: 100%;
+        }
+
+        label.primary {
+            float: left;
+            margin-right: 5px;
+        }
+
+        .captcha__container {
+            margin: 8px 0px;
+        }
+
+        div#vDynamicForm-responseForm-actionList-1 {
+            margin-left: 0px;
+        }
+
+        .pairing-content {
+            width: 100% !important;
+        }
+
+        .contact-form-wrap {
+            gap: 16px;
+        }
+
+
+    }
+
+    /* End Contact Us Section */
+
+    /* Start Brand Logo Slider */
+
+    .brandslider {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: -100%;
+        position: relative;
+        top: 70px;
+        padding: 0px !important;
+    }
+
+    .sliderwrap {
+        text-align: center;
+        background: #ffffff;
+        padding: 34px;
+        border-radius: 16px;
+        box-shadow: 0px 4px 16px -3px rgba(0, 0, 0, 0.29);
+    }
+
+    @media only screen and (max-width: 749px) {
+
+        .brandslider {
+            padding: 0 !important;
+        }
+
+    }
+
+    /* End Brand Logo Slider */
+</style>
